@@ -1,0 +1,20 @@
+#!/bin/bash
+
+cur_wd="/home/w/run/kmq"
+
+if [[ $1 == "start" ]]; then
+    cd $cur_wd/svr && /home/w/bin/kmqd -c /home/w/conf/kmq/svr -s start
+    echo "kmq server starting . . . . . .                      [ok]"
+elif [[ $1 == "stop" ]]; then
+    cd $cur_wd/svr && /home/w/bin/kmqd -c /home/w/conf/kmq/svr -s stop
+    echo "kmq server stopping . . . . . .                      [ok]"
+elif [[ $1 == "restart" ]]; then
+    cd $cur_wd/svr && /home/w/bin/kmqd -c /home/w/conf/kmq/svr -s restart
+    echo "kmq server restarting . . . . . .                    [ok]"
+elif [[ $1 == "status" ]]; then
+    if [ -f $cur_wd/svr/kmq_daemon.pid ]; then
+	echo "kmq server . . . . . .                          [running]"
+    else
+	echo "kmq server . . . . . .                          [stopped]"
+    fi	
+fi

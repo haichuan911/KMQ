@@ -1,0 +1,9 @@
+#-mode python-
+Import('env')
+env = env.Clone()
+
+kmqd_libsname=['kmq_common', 'kmq_core', 'bidfeed-sharelib', 'monitor-client', 'uuid', 'profiler']
+kmqd_sources = Glob('*.cc')
+kmqd = env.aProgram(target = 'kmqd', source = kmqd_sources, LIBS = kmqd_libsname);
+
+Return('kmqd_sources')

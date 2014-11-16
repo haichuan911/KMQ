@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites tests="19" failures="0" disabled="0" errors="0" time="3.246" name="AllTests">
+  <testsuite name="timer" tests="2" failures="0" disabled="0" errors="0" time="0.63">
+    <testcase name="timer" status="run" time="0.607" classname="timer" />
+    <testcase name="tdqueue" status="run" time="0.023" classname="timer" />
+  </testsuite>
+  <testsuite name="sectionReadWriter" tests="1" failures="0" disabled="0" errors="0" time="0.004">
+    <testcase name="readwrite" status="run" time="0.004" classname="sectionReadWriter" />
+  </testsuite>
+  <testsuite name="role" tests="1" failures="0" disabled="0" errors="0" time="0.005">
+    <testcase name="manager" status="run" time="0.004" classname="role" />
+  </testsuite>
+  <testsuite name="regmgr" tests="4" failures="0" disabled="0" errors="0" time="0.521">
+    <testcase name="rgmh_tb" status="run" time="0" classname="regmgr" />
+    <testcase name="registe" status="run" time="0.514" classname="regmgr" />
+    <testcase name="reregiste" status="run" time="0.007" classname="regmgr" />
+    <testcase name="counter" status="run" time="0" classname="regmgr" />
+  </testsuite>
+  <testsuite name="msgqueueex" tests="2" failures="0" disabled="0" errors="0" time="0.136">
+    <testcase name="normal" status="run" time="0.033" classname="msgqueueex" />
+    <testcase name="timeout" status="run" time="0.102" classname="msgqueueex" />
+  </testsuite>
+  <testsuite name="load_balance" tests="2" failures="0" disabled="0" errors="0" time="0.058">
+    <testcase name="ip_hash" status="run" time="0.025" classname="load_balance" />
+    <testcase name="round_robin" status="run" time="0.032" classname="load_balance" />
+  </testsuite>
+  <testsuite name="ht" tests="1" failures="0" disabled="0" errors="0" time="0.252">
+    <testcase name="handlertable" status="run" time="0.252" classname="ht" />
+  </testsuite>
+  <testsuite name="config" tests="2" failures="0" disabled="0" errors="0" time="0.002">
+    <testcase name="app" status="run" time="0.001" classname="config" />
+    <testcase name="kmq" status="run" time="0.001" classname="config" />
+  </testsuite>
+  <testsuite name="api" tests="4" failures="0" disabled="0" errors="0" time="1.637">
+    <testcase name="appcontext" status="run" time="0.342" classname="api" />
+    <testcase name="mux" status="run" time="0.938" classname="api" />
+    <testcase name="compat" status="run" time="0.269" classname="api" />
+    <testcase name="raw" status="run" time="0.087" classname="api" />
+  </testsuite>
+</testsuites>

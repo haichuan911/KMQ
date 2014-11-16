@@ -1,0 +1,13 @@
+#-mode python-
+Import('env')
+env = env.Clone()
+
+libsname=['kmq_common']
+api_src = Glob('*.cc')
+api_sources = [api_src]
+
+env.aLibrary(target = 'kmq_api', source = api_sources, LIBS = libsname)	  
+
+cpps=[api_sources]
+Return(['cpps'] )
+

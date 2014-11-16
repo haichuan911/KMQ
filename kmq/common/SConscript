@@ -1,0 +1,28 @@
+#-mode python-
+Import('env')
+env = env.Clone()
+
+libsname=['profiler']
+config_src = Glob('config/*.cc')
+dsl_src = Glob('dsl/*.cc')
+hash_src = Glob('hash/*.cc')
+io_src = Glob('io/*.cc')
+net_src = Glob('net/*.cc')
+os_src = Glob('os/*.cc')
+proto_src = Glob('proto/*.cc')
+log_src = Glob('log/*.cc')
+stats_src = Glob('stats/*.cc')
+path_src = Glob('path/*.cc')
+lock_src = Glob('lock/*.cc')
+common_all_sources = [log_src, config_src, dsl_src, hash_src, io_src, net_src, os_src, proto_src
+		   , stats_src, path_src, lock_src]
+
+env.aLibrary(target = 'kmq_common',
+             source = common_all_sources,
+	     LIBS = libsname
+             )	  
+
+commontest = env.aDirs('test')
+cpps=[common_all_sources]
+Return(['cpps'] )
+

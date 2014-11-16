@@ -1,0 +1,17 @@
+#!/bin/bash
+
+if [[ $1 == "start" ]]; then
+    /home/w/bin/kmqsvr start
+    /home/w/bin/kmqcli start
+elif [[ $1 == "stop" ]]; then
+    /home/w/bin/kmqsvr stop
+    /home/w/bin/kmqcli stop
+elif [[ $1 == "restart" ]]; then
+    /home/w/bin/kmqsvr restart
+    /home/w/bin/kmqcli restart
+elif [[ $1 == "status" ]]; then
+    /home/w/bin/kmqsvr status
+    /home/w/bin/kmqcli status
+fi
+
+sleep 0.2

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites tests="39" failures="0" disabled="0" errors="0" time="3.727" name="AllTests">
+  <testsuite name="unixconn" tests="1" failures="0" disabled="0" errors="0" time="0.001">
+    <testcase name="dialunix" status="run" time="0.001" classname="unixconn" />
+  </testsuite>
+  <testsuite name="time" tests="3" failures="0" disabled="0" errors="0" time="0.113">
+    <testcase name="rt" status="run" time="0.006" classname="time" />
+    <testcase name="clock" status="run" time="0.006" classname="time" />
+    <testcase name="clock_gettime" status="run" time="0.101" classname="time" />
+  </testsuite>
+  <testsuite name="thread" tests="1" failures="0" disabled="0" errors="0" time="0.001">
+    <testcase name="pthread_retval" status="run" time="0" classname="thread" />
+  </testsuite>
+  <testsuite name="tcpconn" tests="1" failures="0" disabled="0" errors="0" time="0.004">
+    <testcase name="dialtcp" status="run" time="0.003" classname="tcpconn" />
+  </testsuite>
+  <testsuite name="rbtree" tests="2" failures="0" disabled="0" errors="0" time="0.021">
+    <testcase name="single" status="run" time="0.02" classname="rbtree" />
+    <testcase name="time_value" status="run" time="0" classname="rbtree" />
+  </testsuite>
+  <testsuite name="proto" tests="3" failures="0" disabled="0" errors="0" time="2.063">
+    <testcase name="kmq_massage" status="run" time="0.697" classname="proto" />
+    <testcase name="appmsg" status="run" time="0.683" classname="proto" />
+    <testcase name="rawapi" status="run" time="0.683" classname="proto" />
+  </testsuite>
+  <testsuite name="pmutex" tests="4" failures="0" disabled="0" errors="0" time="0">
+    <testcase name="single" status="run" time="0" classname="pmutex" />
+    <testcase name="multiprocess" status="run" time="0" classname="pmutex" />
+    <testcase name="multipthread_benchmark" status="run" time="0" classname="pmutex" />
+    <testcase name="multiprocess_benchmark" status="run" time="0" classname="pmutex" />
+  </testsuite>
+  <testsuite name="path" tests="1" failures="0" disabled="0" errors="0" time="0.001">
+    <testcase name="walk" status="run" time="0.001" classname="path" />
+  </testsuite>
+  <testsuite name="module_stat" tests="3" failures="0" disabled="0" errors="0" time="0.4">
+    <testcase name="trigger" status="run" time="0.2" classname="module_stat" />
+    <testcase name="non_trigger" status="run" time="0.2" classname="module_stat" />
+    <testcase name="trigger_parse" status="run" time="0" classname="module_stat" />
+  </testsuite>
+  <testsuite name="memalloc" tests="1" failures="0" disabled="0" errors="0" time="0.043">
+    <testcase name="alloc" status="run" time="0.043" classname="memalloc" />
+  </testsuite>
+  <testsuite name="log4cpp" tests="1" failures="0" disabled="0" errors="0" time="0.007">
+    <testcase name="multiloger" status="run" time="0.007" classname="log4cpp" />
+  </testsuite>
+  <testsuite name="list" tests="4" failures="0" disabled="0" errors="0" time="0.088">
+    <testcase name="list" status="run" time="0.005" classname="list" />
+    <testcase name="bc" status="run" time="0.034" classname="list" />
+    <testcase name="stlbc" status="run" time="0.038" classname="list" />
+    <testcase name="hashlist" status="run" time="0.004" classname="list" />
+  </testsuite>
+  <testsuite name="hash_table" tests="2" failures="0" disabled="0" errors="0" time="0.051">
+    <testcase name="single_worker" status="run" time="0.011" classname="hash_table" />
+    <testcase name="multipthread" status="run" time="0.04" classname="hash_table" />
+  </testsuite>
+  <testsuite name="flock" tests="4" failures="0" disabled="0" errors="0" time="0.001">
+    <testcase name="single" status="run" time="0.001" classname="flock" />
+    <testcase name="multipthread" status="run" time="0" classname="flock" />
+    <testcase name="multiprocess" status="run" time="0" classname="flock" />
+    <testcase name="multiprocess_ex" status="run" time="0" classname="flock" />
+  </testsuite>
+  <testsuite name="even_odd_check" tests="1" failures="0" disabled="0" errors="0" time="0">
+    <testcase name="route" status="run" time="0" classname="even_odd_check" />
+  </testsuite>
+  <testsuite name="errorno" tests="2" failures="0" disabled="0" errors="0" time="0.001">
+    <testcase name="threadsafe" status="run" time="0" classname="errorno" />
+    <testcase name="kmqerrno" status="run" time="0" classname="errorno" />
+  </testsuite>
+  <testsuite name="epoll" tests="5" failures="0" disabled="0" errors="0" time="0.931">
+    <testcase name="socket" status="run" time="0.121" classname="epoll" />
+    <testcase name="pipe" status="run" time="0.101" classname="epoll" />
+    <testcase name="rdhup" status="run" time="0.004" classname="epoll" />
+    <testcase name="modevents" status="run" time="0.201" classname="epoll" />
+    <testcase name="puretimeout" status="run" time="0.504" classname="epoll" />
+  </testsuite>
+</testsuites>
